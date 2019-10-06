@@ -43,11 +43,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbstactLayer\Customer.cs" />
+    <Compile Include="FactoryLayer\FactoryOne.cs" />
+    <Compile Include="FactoryLayer\FactoryTwo.cs" />
+    <Compile Include="AbstactLayer\IAbstractFactory.cs" />
+    <Compile Include="AbstactLayer\IAbstractProductFour.cs" />
+    <Compile Include="AbstactLayer\IAbstractProductOne.cs" />
+    <Compile Include="AbstactLayer\IAbstractProductThree.cs" />
+    <Compile Include="AbstactLayer\IAbstractProductTwo.cs" />
+    <Compile Include="ProductLayer\ProductTwo.cs" />
+    <Compile Include="ProductLayer\ProductOne.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

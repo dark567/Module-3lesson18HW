@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConsoleApp1.ProductLayer;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,14 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+
+            var productOne = new ProductOne();
+            var productTwo = new ProductTwo();
+
+            Console.WriteLine($"{productOne.DoWorkOne()}");
+            Console.WriteLine($"{productTwo.WorkWithProductOne(productOne)}");
+
+            Console.ReadLine();
         }
     }
 }
