@@ -19,7 +19,7 @@ namespace ConsoleApp
             while (account.MoveNext())
                 Console.WriteLine(((BankAccount<string>)account.Current).Id + " : " + ((BankAccount<string>)account.Current).Account + " : " + ((BankAccount<string>)account.Current).Sum);
 
-
+            
 
             Console.ReadKey();
         }

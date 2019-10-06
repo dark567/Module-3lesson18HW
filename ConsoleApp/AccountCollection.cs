@@ -45,7 +45,16 @@ namespace ConsoleApp
 
         public void AddAccount()
         {
+            BankAccount<string>[] account_ ;
 
+            for (int i = 0; i < account.Length; i++)
+            {
+                account_[i] = account[i];
+            }
+
+            //account = account_;
+
+            account = new BankAccount<string>(account: "32156", sum: 100);
         }
     }
 }
